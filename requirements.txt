@@ -1,0 +1,17 @@
+# ── Core pipeline ────────────────────────────────────────────────────────────
+crewai>=0.28.0
+langchain-groq>=0.1.3
+
+# ── YouTube (no OpenAI) ───────────────────────────────────────────────────────
+youtube-search-python>=1.6.6     # channel + keyword search, no API key needed
+youtube-transcript-api>=0.6.2    # transcript fetch, no API key needed
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Env ───────────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# NOTE: openai is intentionally NOT listed here.
+# crewai_tools[YoutubeChannelSearchTool] pulls in openai for its RAG embeddings.
+# We replaced it with our custom YoutubeChannelTranscriptTool in tools.py.

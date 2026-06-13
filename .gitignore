@@ -1,0 +1,40 @@
+# Environment
+.env
+.env.*
+
+# Streamlit secrets (local)
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+blog/
+.blog/
+env/
+.env/
+
+# Generated blog output files
+*.md
+!README.md
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
